@@ -5,8 +5,9 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-	"printbuf"
 	"time"
+
+	"github.com/WhisperingChaos/printbuf"
 
 	"github.com/BurntSushi/toml"
 )

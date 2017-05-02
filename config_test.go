@@ -1,7 +1,6 @@
 package config_test
 
 import (
-	"entropy/config"
 	"fmt"
 	"os"
 	"path"
@@ -10,6 +9,8 @@ import (
 	"strconv"
 	"strings"
 	"testing"
+
+	"github.com/WhisperingChaos/config"
 
 	"github.com/BurntSushi/toml"
 )
