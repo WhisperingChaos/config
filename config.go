@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"os"
 	"path"
 	"path/filepath"
@@ -32,7 +31,7 @@ func Load(
 	pList := pathDerivation()
 	var isLoad bool
 	var lf LoadFail
-	lf.Init(fmt.Sprintf("Config file %s load failed. Searched: ", fileName))
+	lf.Sprintf("Config file %s load failed. Searched: ", fileName)
 	for _, flpath := range pList {
 		// load default file from config directory
 		if _, err := toml.DecodeFile(path.Join(flpath, fileName), opts); err == nil {
